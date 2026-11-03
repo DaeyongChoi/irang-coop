@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <title>이랑협동조합 | 세대를 잇고, 배움을 나누며, 함께 성장하는 공동체</title>
+  <meta name="description" content="시니어 문화·여가·디지털 교육 전문, 신중년 인생 2막 설계 및 창직·창업, 부설 인터넷신문 '이랑뉴스'와 IT 마케팅 솔루션을 함께하는 다중이해관계자 협동조합입니다.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="이랑협동조합 홈">
+        <img src="logo.png" alt="이랑협동조합 공식 로고" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+        <div class="brand-symbol-fallback" id="fallbackLogo" style="display:none;">
+          <span>🌱</span>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">이랑협동조합</span>
+          <span class="brand-sub">세대를 잇고, 배움을 나누며, 함께 성장하는 공동체</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="메인 메뉴">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">조합소개</a></li>
+          <li><a href="#philosophy" class="nav-link">핵심철학</a></li>
+          <li><a href="#education" class="nav-link">시니어·신중년 교육</a></li>
+          <li><a href="#instructor" class="nav-link">강사양성·파견</a></li>
+          <li><a href="#media-tech" class="nav-link">이랑뉴스·IT마케팅</a></li>
+          <li><a href="#coop-member" class="nav-link">조합원 안내</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="#contact" class="btn-cta">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            교육·제휴 문의
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="모바일 메뉴 열기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="모바일 메뉴">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="logo.png" alt="이랑협동조합" style="width:34px; height:34px; object-fit:contain;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--primary-dark)">이랑협동조합</span>
+      </div>
+      <button id="closeDrawer" aria-label="메뉴 닫기" style="padding:6px; color:#4B5563;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="#about" class="drawer-link">조합 소개 & 비전</a></li>
+      <li><a href="#philosophy" class="drawer-link">핵심 철학 (가치도생)</a></li>
+      <li><a href="#education" class="drawer-link">시니어·신중년 맞춤 교육</a></li>
+      <li><a href="#instructor" class="drawer-link">강사 양성 및 파견 센터</a></li>
+      <li><a href="#media-tech" class="drawer-link">부설 이랑뉴스 & IT솔루션</a></li>
+      <li><a href="#coop-member" class="drawer-link">조합원 참여 (다중이해관계자)</a></li>
+      <li><a href="#contact" class="drawer-link">제휴 문의 & 오시는 길</a></li>
+    </ul>
+    <div class="drawer-contact-box">
+      <p style="font-weight:700; color:var(--primary); font-size:0.85rem; margin-bottom:4px;">이랑협동조합 대표 직통</p>
+      <p style="font-size:1.15rem; font-weight:800; color:#111827; margin-bottom:6px;">010-7556-0189</p>
+      <p style="font-size:0.82rem; color:#6B7280;">cdaeyong@gmail.com | 경기도 광명시</p>
+    </div>
+  </aside>
+
+  <!-- ==================== Hero Section ==================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>각자도생(各自圖生)을 넘어 가치도생(價値圖生)으로</span>
+          </div>
+          <h1 class="hero-title">
+            세대를 잇고, 배움을 나누며<br>
+            <span class="highlight">신중년과 시니어의 삶</span>에<br>
+            새로운 가치를 더합니다
+          </h1>
+          <p class="hero-desc">
+            <strong>이랑협동조합</strong>은 시니어의 문화·여가·디지털 교육 프로그램을 기획·개발하여 평생교육시설에 공급하고, 
+            신중년의 인생 2막 설계부터 맞춤 교육, 창직과 창업, 전문 강사 양성 및 파견까지 책임지는 교육서비스 협동조합입니다. 
+            부설 인터넷 신문사 <strong>'이랑뉴스'</strong>와 SNS 홍보마케팅, 웹/앱 및 온라인 쇼핑몰 구축 운영을 통해 지역사회와 함께 성장합니다.
+          </p>
+          <div class="hero-btn-group">
+            <a href="#contact" class="btn-primary">
+              교육 위탁 & 강사 파견 의뢰
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#coop-member" class="btn-secondary">
+              조합원 참여 안내
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-box">
+              <h4>다중이해관계자</h4>
+              <p>생산자·소비자·직원·후원자</p>
+            </div>
+            <div class="stat-box">
+              <h4>1좌 10,000원</h4>
+              <p>누구나 참여하는 열린 출자</p>
+            </div>
+            <div class="stat-box">
+              <h4>경기도 광명시</h4>
+              <p>주사무소 기반 전국 사업구역</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="card-showcase">
+            <div class="card-inner-header">
+              <span class="ci-tag">Irang Cooperative</span>
+              <span class="ci-subtag">Warm Solidarity</span>
+            </div>
+            <div class="card-logo-center">
+              <img src="logo.png" alt="이랑협동조합 CI" class="hero-ci-img">
+              <p class="hero-ci-slogan">"사람이 모여 가치를 만들고 함께 성장합니다 🌱"</p>
+            </div>
+            <div class="card-features">
+              <div class="card-feat-item">
+                <span class="feat-icon">📱</span>
+                <div>
+                  <strong>디지털 & AI 실무 교육</strong>
+                  <p>스마트폰 기초부터 생성형 AI 실무, 맞춤형 컨설팅</p>
+                </div>
+              </div>
+              <div class="card-feat-item">
+                <span class="feat-icon">🎸</span>
+                <div>
+                  <strong>시니어 문화 & 여가</strong>
+                  <p>통기타 음악회, 문화예술 동호회 연대, 1인 1자서전 쓰기</p>
+                </div>
+              </div>
+              <div class="card-feat-item">
+                <span class="feat-icon">🤝</span>
+                <div>
+                  <strong>사회연대 & 일자리 창출</strong>
+                  <p>신중년 인생 2막 설계, 지역사회 통합돌봄, 사회적기업 도약</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer-badge">
+              <span>리봄AI마케팅연구소 × 이랑협동조합</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Core Philosophy Section ==================== -->
+  <section class="section-wrap bg-alt" id="philosophy">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Core Philosophy</span>
+        <h2 class="section-title">각자도생(各自圖生)을 넘어<br>가치도생(價値圖生)의 세상으로</h2>
+        <p class="section-desc">
+          AI 혁명 시대, 각자 살아남는 치열한 경쟁을 넘어 함께 가치를 나누며 행복을 일구는 따뜻한 연대의 길을 걷습니다.<br>
+          기술이 소외된 이웃을 보듬고, 풍요로운 인생 2막을 함께 열어갑니다.
+        </p>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="philo-card">
+          <div class="philo-icon">🌱</div>
+          <h3>배움과 소통 (Education)</h3>
+          <p>
+            나이와 세대의 벽을 허물고 최신 스마트폰부터 생성형 AI까지 누구나 쉽고 재미있게 배우는 평생학습의 기회를 만듭니다.
+          </p>
+          <span class="philo-quote">"배움에는 나이가 없습니다"</span>
+        </div>
+
+        <div class="philo-card highlight-card">
+          <div class="philo-icon">🤝</div>
+          <h3>연대와 자립 (Solidarity)</h3>
+          <p>
+            신중년의 풍부한 사회적 경험과 지혜를 전문 교육 콘텐츠로 재창조하여 새로운 일자리(창직·창업)와 사회적 자립을 돕습니다.
+          </p>
+          <span class="philo-quote">"사람이 모여 가치를 만듭니다"</span>
+        </div>
+
+        <div class="philo-card">
+          <div class="philo-icon">🌐</div>
+          <h3>지역과 공헌 (Community)</h3>
+          <p>
+            부설 '이랑뉴스'와 디지털 마케팅, 문화예술 연대를 통해 소상공인과 지역사회에 기여하고 통합돌봄을 실천합니다.
+          </p>
+          <span class="philo-quote">"오늘의 감동, 내일의 변화"</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== About Section (조합 소개 & 대표 프로필) ==================== -->
+  <section class="section-wrap" id="about">
+    <div class="container">
+      <div class="about-flex">
+        <div class="about-text-col">
+          <span class="section-tag">About Irang Coop</span>
+          <h2 class="about-title">이랑협동조합은 어떤 곳인가요?</h2>
+          <p class="about-lead">
+            이랑협동조합은 협동조합기본법에 따라 자주적·자립적·자치적인 활동을 통해 
+            조합원의 권익을 증진하고 지역사회 발전에 기여하는 <strong>다중이해관계자 협동조합</strong>입니다.
+          </p>
+          <p class="about-body">
+            밭고랑에 씨앗을 뿌려 풍성한 결실을 맺는 '이랑'처럼, 우리는 신중년과 시니어의 삶에 배움과 일자리의 씨앗을 심습니다. 
+            시니어 전문 평생교육 위탁 운영, 맞춤형 교재 및 프로그램 납품, 시니어 전문 강사 양성 및 파견, 
+            신중년 인생 2막 설계와 창업 인큐베이팅, 그리고 부설 언론사 '이랑뉴스'를 통한 여론 형성 및 홍보마케팅 대행까지 
+            원스톱 사회적경제 비즈니스를 수행합니다.
+          </p>
+          
+          <div class="coop-meta-box">
+            <div class="meta-item">
+              <strong>법인 명칭</strong>
+              <span>이랑협동조합 (다중이해관계자 협동조합)</span>
+            </div>
+            <div class="meta-item">
+              <strong>주된 사무소</strong>
+              <span>경기도 광명시 (사업구역: 전국)</span>
+            </div>
+            <div class="meta-item">
+              <strong>대표 / 이사</strong>
+              <span>최 대 용 (CHOI DAE-YONG)</span>
+            </div>
+            <div class="meta-item">
+              <strong>근거 법령</strong>
+              <span>협동조합기본법 준용 표준정관 제1조~제41조</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-profile-col">
+          <div class="profile-card">
+            <img src="business_card.png" alt="이랑협동조합 최대용 대표 명함" class="biz-card-preview">
+            <div class="profile-details">
+              <h4>소통하는 디지털 길잡이, <strong>최대용 대표</strong></h4>
+              <p class="role-desc">이랑협동조합 대표 / 리봄AI마케팅연구소 대표 / 광명시 스마트시니어플래너</p>
+              <ul class="profile-links">
+                <li><a href="tel:010-7556-0189">📞 010-7556-0189</a></li>
+                <li><a href="mailto:cdaeyong@gmail.com">✉️ cdaeyong@gmail.com</a></li>
+                <li><a href="https://blog.naver.com/cdaeyong72" target="_blank" rel="noopener">📝 공식 네이버 블로그</a></li>
+                <li><a href="https://www.youtube.com/@simingangsachoi" target="_blank" rel="noopener">▶️ 유튜브 채널 (@simingangsachoi)</a></li>
+                <li><a href="https://www.facebook.com/dychoi72" target="_blank" rel="noopener">🌐 페이스북 (@dychoi72)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Education Programs Section ==================== -->
+  <section class="section-wrap bg-alt" id="education">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Education & Life Design</span>
+        <h2 class="section-title">시니어 & 신중년 특화 교육 사업</h2>
+        <p class="section-desc">
+          평생교육시설, 복지관, 지자체에 납품 및 위탁운영되는 이랑협동조합의 대표 커리큘럼입니다.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Card 1 -->
+        <div class="edu-card">
+          <div class="edu-badge">디지털 & AI</div>
+          <div class="edu-icon">📱</div>
+          <h3>디지털 역량 & 생성형 AI 실무</h3>
+          <p>어르신 눈높이에 딱 맞춘 스마트폰 기초부터 인공지능 비서(Gemini, ChatGPT) 활용, 키오스크 실습까지 체계적으로 교육합니다.</p>
+          <ul class="edu-list">
+            <li>내 눈과 귀에 딱 맞는 스마트폰 & 카카오맵 길찾기</li>
+            <li>음성으로 묻고 답하는 구글 Gemini & ChatGPT 활용</li>
+            <li>병원·은행·안심택시 앱 활용 및 데이터 절약 비법</li>
+            <li>소상공인·1인기업을 위한 생성형 AI 마케팅 실무</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="edu-card">
+          <div class="edu-badge">문화 & 여가</div>
+          <div class="edu-icon">🎸</div>
+          <h3>시니어 문화예술 & 1인 1자서전</h3>
+          <p>단순 여가를 넘어 삶의 긍지와 자아존중감을 높이는 문화예술 프로그램과 살아온 삶을 기록하는 자서전 출판을 돕습니다.</p>
+          <ul class="edu-list">
+            <li>통기타 음악회 & 문화예술 동호회 연대</li>
+            <li>내 인생의 찬란한 기록: 1인 1자서전 쓰기 및 출판</li>
+            <li>세대공감 인문학 강좌 & 감성 웰다잉 교육</li>
+            <li>스마트폰으로 만드는 나만의 인생 추억 영상 제작</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="edu-card">
+          <div class="edu-badge">인생2막 설계</div>
+          <div class="edu-icon">🚀</div>
+          <h3>신중년 맞춤 창직(創職) & 창업</h3>
+          <p>퇴직 이후의 경력 단절을 극복하고, 본인의 전문성과 경험을 살려 세상에 없던 새로운 직업을 만들고 창업하도록 인큐베이팅합니다.</p>
+          <ul class="edu-list">
+            <li>신중년 인생 2막 생애 재설계 및 커리어 코칭</li>
+            <li>시니어플래너 & 매칭플래너 창직 아카데미</li>
+            <li>협동조합 설립, 사회적기업 전환 실무 컨설팅</li>
+            <li>소자본 지식창업 & 무자본 온라인 비즈니스 코칭</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Instructor Academy & Dispatch ==================== -->
+  <section class="section-wrap" id="instructor">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Instructor Network</span>
+        <h2 class="section-title">시니어 전문 강사 양성 및 파견 센터</h2>
+        <p class="section-desc">
+          검증된 교수법과 풍부한 현장 경험을 갖춘 전문 강사풀을 운영하며, 공공기관 및 평생학습관에 최적의 강사를 파견합니다.
+        </p>
+      </div>
+
+      <div class="instructor-wrap">
+        <div class="inst-col">
+          <div class="inst-box">
+            <h3>🎓 시니어 전문 강사 양성 과정</h3>
+            <p>시니어의 신체적·인지적 특성을 이해하고, 소통과 공감을 이끌어내는 전문 교수법을 교육합니다.</p>
+            <div class="inst-steps">
+              <div class="istep">
+                <span class="istep-num">1</span>
+                <div>
+                  <strong>교수설계 & 강의계획서 작성</strong>
+                  <p>기관 공모 및 위탁 사업에 즉각 채택되는 맞춤형 강의계획서 코칭</p>
+                </div>
+              </div>
+              <div class="istep">
+                <span class="istep-num">2</span>
+                <div>
+                  <strong>실전 모의 강의 & 피드백</strong>
+                  <p>시니어 수강생의 호응을 이끄는 스피치, 교구 활용, 시연 코칭</p>
+                </div>
+              </div>
+              <div class="istep">
+                <span class="istep-num">3</span>
+                <div>
+                  <strong>튜터(보조강사) 현장 실습</strong>
+                  <p>이랑협동조합 정규 강의에 튜터로 투입되어 실전 노하우 체득</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inst-col">
+          <div class="inst-box highlight-box">
+            <h3>🏢 공공기관·시설 맞춤형 강사 파견</h3>
+            <p>시니어 교육이 필요한 복지관, 주민센터, 평생학습관에 검증된 주강사 및 실습 보조강사(튜터) 팀을 파견합니다.</p>
+            <div class="inst-features">
+              <div class="ifeat">
+                <strong>✓ 철저한 현장 맞춤형 파견</strong>
+                <p>수강생의 디지털 숙련도에 따라 1:1 밀착 지도가 가능한 보조강사 동반 파견</p>
+              </div>
+              <div class="ifeat">
+                <strong>✓ 투명한 정산 및 관리 체계</strong>
+                <p>이랑협동조합 내부 사업수행 규정에 따른 계약 및 행정 서류 완벽 지원</p>
+              </div>
+              <div class="ifeat">
+                <strong>✓ 높은 교육 만족도 보장</strong>
+                <p>광명시인생플러스센터, 복지관 등 검증된 강의 경력의 전문 강사진</p>
+              </div>
+            </div>
+            <a href="#contact" class="btn-primary" style="margin-top:24px; width:100%; justify-content:center;">
+              강사 파견 의뢰 상담하기
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Media & IT Solutions Section ==================== -->
+  <section class="section-wrap bg-alt" id="media-tech">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Media & Digital Solutions</span>
+        <h2 class="section-title">부설 '이랑뉴스' & IT·마케팅 솔루션</h2>
+        <p class="section-desc">
+          자체 미디어 플랫폼과 IT 역량을 결합하여 조합원과 지역사회의 비즈니스 성공을 견인합니다.
+        </p>
+      </div>
+
+      <div class="biz-grid">
+        <!-- Biz 1 -->
+        <div class="biz-card">
+          <div class="biz-icon">📰</div>
+          <h3>부설 인터넷 신문 '이랑뉴스'</h3>
+          <p>
+            신중년과 시니어의 일자리, 문화, 복지, 평생교육 정책 소식을 발 빠르고 깊이 있게 전하는 전문 인터넷 언론사입니다.
+          </p>
+          <ul class="biz-bullets">
+            <li>시니어 인생 2막 성공 스토리 인터뷰</li>
+            <li>지역사회 사회적경제 & 통합돌봄 현장 심층 보도</li>
+            <li>조합원 및 소상공인 우수 제품 기획 기사 발행</li>
+          </ul>
+        </div>
+
+        <!-- Biz 2 -->
+        <div class="biz-card">
+          <div class="biz-icon">📢</div>
+          <h3>SNS 홍보 & 마케팅 대행</h3>
+          <p>
+            '이랑뉴스' 보도와 유튜브, 블로그, 페이스북, 인스타그램을 결합한 통합 바이럴 마케팅 솔루션을 제공합니다.
+          </p>
+          <ul class="biz-bullets">
+            <li>공공기관 행사 및 정책 홍보 콘텐츠 기획·제작</li>
+            <li>소상공인 브랜드 네이밍, 명함, 브로슈어 디자인</li>
+            <li>숏폼 영상 제작 및 소셜미디어 채널 운영 대행</li>
+          </ul>
+        </div>
+
+        <!-- Biz 3 -->
+        <div class="biz-card">
+          <div class="biz-icon">💻</div>
+          <h3>웹/앱 개발 & 온라인 쇼핑몰 구축</h3>
+          <p>
+            모바일·PC 반응형 홈페이지 제작부터 스마트스토어 등 전자상거래 쇼핑몰 구축, 위탁 운영을 대행합니다.
+          </p>
+          <ul class="biz-bullets">
+            <li>최적화된 모바일·태블릿·PC 반응형 웹사이트 구축</li>
+            <li>온라인 쇼핑몰(스마트스토어 등) 세팅 및 상품 소싱</li>
+            <li>조합원 생산 우수 상품 온라인 유통 및 판로 지원</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Cooperative Member Guide Section ==================== -->
+  <section class="section-wrap" id="coop-member">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Join Our Cooperative</span>
+        <h2 class="section-title">함께 만드는 다중이해관계자 협동조합</h2>
+        <p class="section-desc">
+          이랑협동조합 정관에 따라 4개 유형의 조합원으로 누구나 평등하게 참여하고 성장의 열매를 나눕니다.
+        </p>
+      </div>
+
+      <div class="member-types-grid">
+        <div class="mtype-card">
+          <span class="mtype-badge">생산자조합원</span>
+          <h4>강사 · 개발자 · 기획자</h4>
+          <p>시니어 교육 프로그램 기획·강의, 미디어 콘텐츠 제작, 웹/앱 개발, 컨설팅 등 전문 재화나 용역을 제공하는 전문가</p>
+          <div class="mtype-benefit">✓ 공정한 프로젝트 수익배분 & 수주 인센티브</div>
+        </div>
+
+        <div class="mtype-card">
+          <span class="mtype-badge">소비자조합원</span>
+          <h4>수강생 · 독자 · 이용 고객</h4>
+          <p>조합의 시니어 교육 프로그램, 이랑뉴스 미디어, IT 마케팅 및 쇼핑몰 상품을 일상적으로 이용하고 구매하는 고객</p>
+          <div class="mtype-benefit">✓ 교육 프로그램 우선 수강 & 할인 혜택</div>
+        </div>
+
+        <div class="mtype-card">
+          <span class="mtype-badge">직원조합원</span>
+          <h4>조합 상근 실무자</h4>
+          <p>이랑협동조합에 고용되어 조합의 교육, 미디어, 행정, 대외 사업을 상시 또는 정기적으로 수행하는 핵심 인력</p>
+          <div class="mtype-benefit">✓ 안정적 고용 환경 & 민주적 경영 참여</div>
+        </div>
+
+        <div class="mtype-card">
+          <span class="mtype-badge">후원자조합원</span>
+          <h4>후원자 · 협력 기관</h4>
+          <p>조합의 설립 목적과 사업 취지에 찬동하여 자금, 시설, 인력, 전문 지식을 후원하거나 전략적으로 협력하는 파트너</p>
+          <div class="mtype-benefit">✓ 지역사회 공헌 파트너십 & 네트워킹</div>
+        </div>
+      </div>
+
+      <!-- 정관 출자 및 배당 안내 바 -->
+      <div class="coop-terms-bar">
+        <div class="term-col">
+          <strong>출자금 기준</strong>
+          <span>출자 1좌: 10,000원 (총 출자좌수의 30% 이내 보유 가능)</span>
+        </div>
+        <div class="term-col">
+          <strong>민주적 의사결정</strong>
+          <span>출자금 액수와 무관하게 1인 1표 동등한 의결권 및 선거권 보장</span>
+        </div>
+        <div class="term-col">
+          <strong>투명한 잉여금 배당</strong>
+          <span>사업 이용실적배당(마일리지제) 및 출자배당(최대 10% 이내)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Contact & Consultation Form Section ==================== -->
+  <section class="section-wrap bg-alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Contact & Partnership</span>
+        <h2 class="section-title">교육 위탁 · 강사 파견 · 조합원 가입 문의</h2>
+        <p class="section-desc">
+          시니어 교육 기획, 평생학습 위탁운영, 언론 홍보마케팅 및 조합원 가입 등 무엇이든 편하게 남겨주세요.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card">
+          <div class="info-card-top">
+            <img src="logo.png" alt="이랑협동조합" class="info-logo">
+            <div>
+              <h3>이랑협동조합</h3>
+              <p>세대를 잇고, 배움을 나누며, 함께 성장하는 공동체</p>
+            </div>
+          </div>
+
+          <div class="info-rows">
+            <div class="irow">
+              <span class="irow-icon">📍</span>
+              <div>
+                <strong>주된 사무소 소재지</strong>
+                <p>경기도 광명시 (주사무소)</p>
+              </div>
+            </div>
+            <div class="irow">
+              <span class="irow-icon">📞</span>
+              <div>
+                <strong>대표 직통 전화</strong>
+                <p><a href="tel:010-7556-0189" style="color:var(--primary); font-weight:700;">010-7556-0189</a> (최대용 대표)</p>
+              </div>
+            </div>
+            <div class="irow">
+              <span class="irow-icon">✉️</span>
+              <div>
+                <strong>공식 이메일</strong>
+                <p><a href="mailto:cdaeyong@gmail.com">cdaeyong@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="irow">
+              <span class="irow-icon">🌐</span>
+              <div>
+                <strong>공식 채널</strong>
+                <p>
+                  네이버 블로그: <a href="https://blog.naver.com/cdaeyong72" target="_blank" rel="noopener">blog.naver.com/cdaeyong72</a><br>
+                  유튜브: <a href="https://www.youtube.com/@simingangsachoi" target="_blank" rel="noopener">@simingangsachoi</a><br>
+                  페이스북: <a href="https://www.facebook.com/dychoi72" target="_blank" rel="noopener">facebook.com/dychoi72</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-sub-notice">
+            🌱 <strong>리봄AI마케팅연구소 × 이랑협동조합(추진 중)</strong><br>
+            민간 연구소의 AI 기술력과 협동조합의 따뜻한 사회적 연대가 결합된 전문 교육 서비스를 제공합니다.
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-form-card">
+          <h3>온라인 상담 및 제휴 신청서</h3>
+          <form id="inquiryForm" onsubmit="event.preventDefault(); handleInquirySubmit();">
+            <div class="form-group">
+              <label for="inqCategory" class="form-label">문의 유형 *</label>
+              <select id="inqCategory" class="form-control" required>
+                <option value="edu">시니어 교육 프로그램 납품 및 위탁운영 문의</option>
+                <option value="dispatch">전문 강사 파견 의뢰 (주강사/보조강사)</option>
+                <option value="life2">신중년 인생 2막 설계 / 창직·창업 컨설팅</option>
+                <option value="news">이랑뉴스 취재 제보 / 홍보·마케팅 대행 문의</option>
+                <option value="it">홈페이지·웹앱 개발 / 온라인 쇼핑몰 구축</option>
+                <option value="member">조합원 가입 신청 (생산자/소비자/후원자)</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="inqName" class="form-label">성함 또는 기관명 *</label>
+                <input type="text" id="inqName" class="form-control" placeholder="홍길동 (또는 OO복지관)" required>
+              </div>
+              <div class="form-group">
+                <label for="inqPhone" class="form-label">연락처 *</label>
+                <input type="tel" id="inqPhone" class="form-control" placeholder="010-0000-0000" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inqEmail" class="form-label">이메일 주소</label>
+              <input type="email" id="inqEmail" class="form-control" placeholder="example@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label for="inqMessage" class="form-label">상세 문의 내용 *</label>
+              <textarea id="inqMessage" class="form-control" rows="4" placeholder="희망 교육 일정, 대상 인원, 위탁 범위 또는 조합원 가입 문의 내용을 자유롭게 적어주세요." required></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="inqAgree" required checked>
+              <label for="inqAgree">개인정보 수집 및 상담 연락 목적 이용에 동의합니다. (필수)</label>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              문의 및 신청서 전송하기
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img src="logo.png" alt="이랑협동조합" style="height:38px; width:auto; vertical-align:middle; margin-right:8px;">
+            <span style="font-size:1.3rem; font-weight:800; color:#FFFFFF;">이랑협동조합</span>
+          </div>
+          <p class="footer-slogan">세대를 잇고, 배움을 나누며, 함께 성장하는 공동체</p>
+          <div class="footer-biz-info">
+            <p>상호: 이랑협동조합 | 대표자: 최대용 | 주소: 경기도 광명시</p>
+            <p>대표전화: 010-7556-0189 | 이메일: cdaeyong@gmail.com</p>
+            <p>사업분야: 시니어 평생교육 위탁, 강사양성 및 파견, 부설 이랑뉴스, 홍보마케팅 대행, 웹/쇼핑몰 구축, 창직·창업 케어</p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-nav-col">
+            <h5>주요 바로가기</h5>
+            <ul>
+              <li><a href="#about">조합소개</a></li>
+              <li><a href="#philosophy">핵심철학(가치도생)</a></li>
+              <li><a href="#education">시니어 교육과정</a></li>
+              <li><a href="#instructor">강사파견 센터</a></li>
+              <li><a href="#media-tech">이랑뉴스 & IT솔루션</a></li>
+              <li><a href="#coop-member">조합원 참여</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h5>공식 소통 채널</h5>
+            <ul>
+              <li><a href="https://blog.naver.com/cdaeyong72" target="_blank" rel="noopener">네이버 블로그</a></li>
+              <li><a href="https://www.youtube.com/@simingangsachoi" target="_blank" rel="noopener">유튜브 채널</a></li>
+              <li><a href="https://www.facebook.com/dychoi72" target="_blank" rel="noopener">페이스북</a></li>
+              <li><a href="#contact">온라인 제휴문의</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 이랑협동조합. All Rights Reserved. (다중이해관계자 협동조합)</p>
+        <p>본 웹사이트는 PC, 태블릿, 모바일 표준 반응형 웹 규격을 준수하여 구축되었습니다.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="btn-top" id="btnTop" aria-label="맨 위로 가기">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-box" id="toastBox">
+    <span class="toast-icon">✓</span>
+    <span id="toastMsg">문의가 정상적으로 접수되었습니다. 최대용 대표가 신속히 연락드리겠습니다!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
